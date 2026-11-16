@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServiceDesk.Views.NewTicketPage"
+             Title="New Ticket">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+            <Entry x:Name="TitleEntry" Placeholder="Title" />
+            <Entry x:Name="RequesterEntry" Placeholder="Your name" />
+            <Editor x:Name="DescriptionEditor" Placeholder="Describe the issue" HeightRequest="140" />
+            <Picker x:Name="PriorityPicker" Title="Priority" />
+            <Button Text="Submit" Clicked="OnSubmitClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
